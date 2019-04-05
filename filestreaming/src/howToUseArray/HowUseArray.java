@@ -1,0 +1,26 @@
+package howToUseArray;
+
+import java.util.Arrays;
+
+public class HowUseArray {
+	public static void howUseArray() {
+		//Declare an array
+		int[] nums;
+		//Declare and allocate an array
+		double[] otherNums = new double[5];
+		//Declaring, allocating, and initializing an array
+		String[] availablePets = {"cat", "dog", "fish" };
+		String[] unavailablePets = {"bird", "rabit", "hamster", "gerbil"};
+		System.out.println(Arrays.toString(availablePets));
+		System.out.println(Arrays.toString(unavailablePets));
+		int indexOfAvailablePet = 2; //index of fish
+		int indexOfUnavailablePet = 0; //index of bird
+		String availablePet = availablePets[indexOfAvailablePet];
+		String unAvailablePet = unavailablePets[indexOfUnavailablePet];
+		availablePets[indexOfAvailablePet] = unAvailablePet; 
+		unavailablePets[indexOfUnavailablePet] = availablePet;
+		System.out.println();
+		System.out.println(Arrays.toString(availablePets));
+		System.out.println(Arrays.toString(unavailablePets));
+	}
+}
