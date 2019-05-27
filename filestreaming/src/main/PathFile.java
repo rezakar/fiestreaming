@@ -16,5 +16,9 @@ public class PathFile {
 		System.out.println(realPath);
 
 	}
+	public static void main(String[] args) throws IOException{
+		PathFile pathfile = new PathFile();
+		pathfile.getPath();
+	}
 	
 }

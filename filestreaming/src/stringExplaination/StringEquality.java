@@ -29,4 +29,9 @@ public static String getUnique(String[] r) {
 	return unique;
 		
 	}
+public static void main (String[] args) {
+	String[] r = {"tree","yree","tree","yree", "utree"};
+	System.out.println(getUnique(r));
+	literalMethod();
+}
 	}
