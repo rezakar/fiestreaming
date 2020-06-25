@@ -13,6 +13,13 @@ public class HashMapInUse {
 		System.out.println("Key number Three!" + wordToNum.get("Three"));
 		System.out.println("All the Values! " + wordToNum.values());
 		System.out.println("All the kys! " + wordToNum.keySet());
+		System.out.println("All the kys! " + wordToNum.containsValue(1));
 		System.out.println("Delete key Four! " + wordToNum.remove("four"));
+		for(String s : wordToNum.keySet()) {
+			System.out.println(s);
+		}
+	}
+	public static void main(String[] arg) {
+		hashMapInUse();
 	}
 }

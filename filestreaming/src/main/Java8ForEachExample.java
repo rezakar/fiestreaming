@@ -116,7 +116,7 @@ public class Java8ForEachExample {
 		System.out.println("expected value 4, actual value: " + 
 		intToString2.apply(4561).length());
 		
-		//lambda made using a condtractor
+		//lambda made using a constractor
 		Function<String, BigInteger> newBigInt = BigInteger::new;
 		System.out.println("expected value: 123456789, actual value: " + 
 		newBigInt.apply("123456789"));
